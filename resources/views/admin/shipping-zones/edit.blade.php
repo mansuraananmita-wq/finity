@@ -1,0 +1,13 @@
+@extends('layouts.admin')
+@section('title', 'Edit Shipping Zone')
+
+@section('content')
+<form method="POST" action="{{ route('admin.shipping-zones.update', $zone) }}" class="max-w-2xl rounded-xl bg-white p-6 shadow-sm">
+    @csrf @method('PUT')
+    @include('admin.shipping-zones._form', ['zone' => $zone])
+    <div class="mt-6 flex gap-3">
+        <button class="rounded-lg bg-ocean-mid px-5 py-2 text-white">Save</button>
+        <a href="{{ route('admin.shipping-zones.index') }}" class="rounded-lg border px-5 py-2">Cancel</a>
+    </div>
+</form>
+@endsection

@@ -1,0 +1,291 @@
+
+Aquarium Fish Store
+Finalized Product Catalog — 40 Ornamental Fish
+Category
+Fish Name
+Scientific Name
+Price (BDT)
+Description
+Product Photo
+
+Goldfish
+Common Goldfish
+Carassius auratus
+80
+Classic hardy goldfish, great for beginners. Cold-water fish, needs a spacious tank.
+
+
+Goldfish
+Fantail Goldfish
+Carassius auratus
+150
+Round-bodied goldfish with a split tail fin. Peaceful and easy to care for.
+
+
+Goldfish
+Oranda Goldfish
+Carassius auratus
+450
+Goldfish with a distinctive raspberry-like head growth (wen). Slow swimmer, needs calm tankmates.
+
+
+Goldfish
+Black Moor Goldfish
+Carassius auratus
+300
+Velvety black goldfish with telescope eyes. Needs smooth decor to protect its eyes.
+
+
+Goldfish
+Ryukin Goldfish
+Carassius auratus
+350
+High-backed fancy goldfish with flowing fins. Prefers cooler water and good filtration.
+
+
+Betta
+Veiltail Betta
+Betta splendens
+120
+Classic long-flowing-finned betta. Best kept alone due to territorial nature.
+
+
+Betta
+Halfmoon Betta
+Betta splendens
+350
+Betta with a fin spread of 180 degrees when flared. A show-quality favorite.
+
+
+Betta
+Crowntail Betta
+Betta splendens
+280
+Betta with spiky, crown-like fin rays. Bold colors and striking appearance.
+
+
+Betta
+Plakat Betta
+Betta splendens
+250
+Short-finned, athletic betta closer to the wild form. Active swimmer.
+
+
+Livebearers
+Guppy (Mixed Colors)
+Poecilia reticulata
+40
+Small, colorful, and easy to breed. Perfect starter fish for community tanks.
+
+
+Livebearers
+Balloon Molly
+Poecilia sphenops
+60
+Round-bellied molly with a peaceful temperament. Does well in slightly salty water.
+
+
+Livebearers
+Platy
+Xiphophorus maculatus
+45
+Hardy, colorful livebearer that breeds easily. Great for beginner community tanks.
+
+
+Livebearers
+Swordtail
+Xiphophorus hellerii
+55
+Active livebearer named for the sword-like extension on the male's tail fin.
+
+
+Livebearers
+Endler's Guppy
+Poecilia wingei
+70
+Smaller, more colorful cousin of the common guppy. Very active and hardy.
+
+
+Tetra
+Neon Tetra
+Paracheirodon innesi
+35
+Small schooling fish with a bright blue-red stripe. Best kept in groups of 6+.
+
+
+Tetra
+Cardinal Tetra
+Paracheirodon axelrodi
+60
+Similar to neon tetra but with a longer red stripe. Stunning in planted tanks.
+
+
+Tetra
+Black Skirt Tetra
+Gymnocorymbus ternetzi
+40
+Black, flowing-finned schooling fish. Hardy and adaptable to varied water conditions.
+
+
+Tetra
+Ember Tetra
+Hyphessobrycon amandae
+45
+Tiny, glowing orange schooling fish. Ideal for small nano planted tanks.
+
+
+Tetra
+Rummy Nose Tetra
+Hemigrammus bleheri
+70
+Recognizable by its bright red nose and striped tail. Peaceful schooling fish.
+
+
+Barb
+Cherry Barb
+Puntius titteya
+40
+Small, cherry-red schooling barb. Peaceful and suitable for community tanks.
+
+
+Barb
+Tiger Barb
+Puntius tetrazona
+45
+Striped, active barb best kept in larger groups to reduce fin-nipping.
+
+
+Barb
+Rosy Barb
+Pethia conchonius
+50
+Hardy pink-toned barb, good for slightly cooler community tanks.
+
+
+Gourami
+Dwarf Gourami
+Trichogaster lalius
+120
+Colorful, labyrinth-breathing fish that can gulp air at the surface. Peaceful.
+
+
+Gourami
+Pearl Gourami
+Trichopodus leerii
+180
+Elegant fish with a lace-like pearl pattern and a threadlike ventral fin.
+
+
+Gourami
+Blue gourami 
+Trichopodus trichopterus
+150
+Larger, hardy gourami with a calm temperament, good for bigger community tanks.
+
+
+Cichlid
+Angelfish
+Pterophyllum scalare
+220
+Tall, graceful cichlid, an aquarium classic. Needs a tall tank to accommodate its fins.
+
+
+Cichlid
+Discus
+Symphysodon aequifasciatus
+1800
+Premium disc-shaped cichlid prized for its color and pattern. Needs stable, warm water.
+
+
+Cichlid
+Oscar Fish
+Astronotus ocellatus
+500
+Large, intelligent cichlid that recognizes its owner. Needs a big tank as it grows.
+
+
+Cichlid
+Flowerhorn
+Hybrid cichlid
+1500
+Bold hybrid cichlid known for its head hump and vivid colors. Territorial, keep alone.
+
+
+Cichlid
+Convict Cichlid
+Amatitlania nigrofasciata
+90
+Striped, hardy, and easy to breed cichlid. Can be territorial when spawning.
+
+
+Cichlid
+Electric Yellow Cichlid
+Labidochromis caeruleus
+150
+Bright yellow African cichlid, popular for colorful cichlid community tanks.
+
+
+Catfish/Bottom Dweller
+Bristlenose Pleco
+Ancistrus cirrhosus
+180
+Algae-eating catfish, great tank cleaner. Peaceful and mostly nocturnal.
+
+
+Catfish/Bottom Dweller
+Corydoras Catfish
+Corydoras spp.
+90
+Small, friendly bottom-dweller that helps keep the substrate clean. Best kept in groups.
+
+
+Shark Type
+Red Tail Shark
+Epalzeorhynchos bicolor
+130
+Black-bodied fish with a bright red tail, resembling a small shark. Can be territorial.
+
+
+Shark Type
+Bala Shark
+Balantiocheilos melanopterus
+200
+Silver, torpedo-shaped, active schooling fish. Needs a large tank as it grows big.
+
+
+Nano Fish
+White Cloud Mountain Minnow
+Tanichthys albonubes
+40
+Cold-tolerant, hardy nano fish good for beginners and unheated tanks.
+
+
+Nano Fish
+Chili Rasbora
+Boraras brigittae
+60
+Extremely small, vivid red nano fish, ideal for tiny planted tanks.
+
+
+Premium/Rare
+Silver Arowana
+Osteoglossum bicirrhosum
+3500
+Large, prestigious predator fish known as the 'dragon fish'. Needs a very large tank.
+
+
+Premium/Rare
+Freshwater Stingray
+Potamotrygon spp.
+4500
+Rare, striking bottom-dwelling ray. For experienced keepers with large, soft-water tanks.
+
+
+Invertebrate
+Cherry Shrimp
+Neocaridina davidi
+50
+Small, bright red algae-eating shrimp. Easy to keep and breeds readily in planted tanks.
+
+
+

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-ocean-dark text-slate-100 antialiased;
+    }
+
+    body.admin-body {
+        @apply bg-slate-100 text-slate-800;
+    }
+
+    [lang='bn'] body,
+    html[lang='bn'] body {
+        font-family: 'Noto Sans Bengali', 'Hind Siliguri', 'Inter', system-ui, sans-serif;
+    }
+
+    [x-cloak] {
+        display: none !important;
+    }
+}
+
+@layer components {
+    .ocean-gradient {
+        background: linear-gradient(135deg, #041c32 0%, #04293a 50%, #064663 100%);
+    }
+
+    .hero-overlay {
+        background: linear-gradient(to bottom, rgba(4, 28, 50, 0.4), rgba(4, 28, 50, 0.85));
+    }
+
+    .btn-coral {
+        @apply inline-flex items-center justify-center rounded-full bg-coral-accent px-6 py-3 font-semibold text-ocean-dark shadow-glow-coral transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-coral-accent/50;
+    }
+
+    .btn-ocean {
+        @apply inline-flex items-center justify-center rounded-full border border-ocean-light/60 bg-ocean-mid/80 px-5 py-2.5 text-sm font-medium text-white transition hover:border-coral-accent/50 hover:bg-ocean-light/40;
+    }
+
+    .card-ocean {
+        @apply rounded-2xl border border-ocean-light/30 bg-ocean-mid/60 backdrop-blur-sm;
+    }
+
+    .input-ocean {
+        @apply w-full rounded-xl border-ocean-light/40 bg-ocean-dark/60 text-white placeholder-slate-400 focus:border-coral-accent focus:ring-coral-accent/30;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-video {
+        display: none !important;
+    }
+
+    .bubble-particle {
+        display: none !important;
+    }
+
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (max-width: 479px) {
+    /* Tradeoff: skip video on very small screens to save mobile data; poster image is shown instead. */
+    .hero-video {
+        display: none;
+    }
+}
