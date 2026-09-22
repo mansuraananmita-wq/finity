@@ -1,66 +1,165 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Finity Fish Store
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Online fish store built with **Laravel 10**. Browse products, manage cart & wishlist, checkout with coupons and shipping zones, and pay via **bKash** or **Nagad**. Includes an admin panel for catalog, orders, reviews, and customers. UI supports **English** and **Bangla**.
 
-## About Laravel
+**Repository:** [github.com/mansuraananmita-wq/finity](https://github.com/mansuraananmita-wq/finity.git)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Product catalog with categories, detail pages, and ratings
+- Cart, wishlist, and coupon discounts
+- Checkout with shipping zone calculation
+- Payments: bKash & Nagad (sandbox / live via `.env`)
+- Customer auth (Laravel Fortify): register, login, email verify, password reset
+- Order history for customers
+- Admin panel: products, categories, coupons, shipping zones, orders, reviews, customers
+- Bilingual UI (`en` / `bn`)
+- Vite + Tailwind CSS + Alpine.js frontend
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Tech stack
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+| Layer | Stack |
+|--------|--------|
+| Backend | PHP 8.1+, Laravel 10, Fortify, Sanctum |
+| Frontend | Blade, Vite, Tailwind CSS 3, Alpine.js |
+| Database | MySQL 8+ / MariaDB (XAMPP compatible) |
+| Payments | bKash Tokenized, Nagad |
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## Requirements
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- PHP 8.1 or higher (extensions: `pdo_mysql`, `mbstring`, `openssl`, `tokenizer`, `xml`, `ctype`, `json`, `fileinfo`, `gd`)
+- Composer
+- Node.js 18+ and npm
+- MySQL / MariaDB (e.g. XAMPP)
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Local setup
 
-## Contributing
+### 1. Clone & install
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+git clone https://github.com/mansuraananmita-wq/finity.git
+cd finity
+composer install
+npm install
+```
 
-## Code of Conduct
+### 2. Environment
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-## Security Vulnerabilities
+Edit `.env` for your database (XAMPP default shown):
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=finity
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Create the database in MySQL / phpMyAdmin:
+
+```sql
+CREATE DATABASE finity CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
+### 3. Migrate & seed
+
+```bash
+php artisan migrate --seed
+php artisan storage:link
+```
+
+### 4. Run the app
+
+```bash
+# Terminal 1 — Laravel
+php artisan serve
+
+# Terminal 2 — Vite assets
+npm run dev
+```
+
+Open [http://127.0.0.1:8000](http://127.0.0.1:8000).
+
+---
+
+## Admin account
+
+Production-style admin credentials come from `.env` when using `ProductionSeeder`:
+
+```env
+ADMIN_EMAIL=admin@yourdomain.com
+ADMIN_NAME=Admin
+ADMIN_PASSWORD=change-me-on-deploy
+ADMIN_PHONE=01700000000
+```
+
+```bash
+php artisan db:seed --class=ProductionSeeder
+```
+
+Then open `/admin` while logged in as that user.
+
+---
+
+## Payments (optional for local)
+
+Configure sandbox keys in `.env`:
+
+```env
+BKASH_MODE=sandbox
+BKASH_APP_KEY=...
+BKASH_APP_SECRET=...
+BKASH_USERNAME=...
+BKASH_PASSWORD=...
+
+NAGAD_MODE=sandbox
+NAGAD_MERCHANT_ID=...
+NAGAD_MERCHANT_PRIVATE_KEY=...
+NAGAD_PG_PUBLIC_KEY=...
+```
+
+Without real keys, browse/catalog/cart still work; live payment calls need merchant credentials.
+
+---
+
+## Useful commands
+
+```bash
+php artisan migrate --seed   # reset schema + sample data
+npm run build                # production frontend assets
+php artisan test             # PHPUnit
+```
+
+---
+
+## Project structure (high level)
+
+```
+app/Http/Controllers/   # Storefront + Admin controllers
+app/Models/             # Eloquent models
+database/migrations/    # Schema
+database/seeders/       # Categories, products, shipping, etc.
+resources/views/        # Blade templates
+resources/lang/         # en + bn strings
+routes/web.php          # Public, auth, and admin routes
+```
+
+---
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is based on the [Laravel](https://laravel.com) framework (MIT). Application code in this repository is provided as-is for the Finity Fish Store project.
